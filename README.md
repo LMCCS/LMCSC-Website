@@ -1,2 +1,2 @@
-# lmcsc
-LMCSC Website
+# LMCSC Website
+Los Medanos Computer Science Club
