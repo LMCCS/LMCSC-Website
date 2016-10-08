@@ -9,6 +9,11 @@ body {
   line-height: 1.4;
 }
 
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
 ::selection      { background: black; color: white }
 ::-moz-selection { background: black; color: white }
 
@@ -18,4 +23,13 @@ a {
   box-shadow: 0 1px 0;
 }
 
-/* Insert awesome. */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #21293c;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
