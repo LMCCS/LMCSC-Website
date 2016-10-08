@@ -1,3 +1,5 @@
+/* PAGE SETUP -------------------------- */
+
 html { box-sizing: border-box }
 
 *,
@@ -5,7 +7,7 @@ html { box-sizing: border-box }
 *:after { box-sizing: inherit }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'VT323', monospace;
   line-height: 1.4;
 }
 
@@ -14,8 +16,8 @@ canvas {
   vertical-align: bottom;
 }
 
-::selection      { background: black; color: white }
-::-moz-selection { background: black; color: white }
+::selection      { background: white; color: magenta }
+::-moz-selection { background: white; color: magenta }
 
 a {
   color: inherit;
@@ -23,13 +25,52 @@ a {
   box-shadow: 0 1px 0;
 }
 
+/* PARTICLE SETUP -------------------------- */
+
 #particles-js {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #21293c;
+  background-color: #202732;
   background-image: url("");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
 }
+
+/* CENTER TEXT -------------------------- */
+
+.hero {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.hero-text {
+  color: #0f6;
+  font-size: 1.4rem;
+  min-width: 20.5rem;
+}
+
+/* BLINK CARET -------------------------- */
+
+#caret {
+  display: inline-block;
+  height: 1.07em;
+  width: .56em;
+  vertical-align: top;
+  background: #fff;
+}
+
+.blink {
+  -webkit-animation: blink 1s steps(1) infinite;
+          animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink         { 50% { background: transparent; } }
+@-webkit-keyframes blink { 50% { background: transparent; } }
+
+/* SMALLER SCREENS -------------------------- */
+
+@media (max-width: 400px) { html { font-size: 78% } }
