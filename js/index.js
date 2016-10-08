@@ -1,4 +1,5 @@
 // Particle options
+
 particlesJS("particles-js", {
   "particles": {
     "number": {

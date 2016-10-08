@@ -73,4 +73,5 @@ a {
 
 /* SMALLER SCREENS -------------------------- */
 
-@media (max-width: 400px) { html { font-size: 78% } }
+@media (max-width: 400px) { html { font-size: 77% } }
+@media (max-width: 320px) { html { font-size: 67% } }
